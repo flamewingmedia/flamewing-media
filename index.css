@@ -19,19 +19,19 @@
     #circuitOne {
         position: absolute;
         left: 0;
-        top: 11%;
+        top: 110px;
         animation: enterLeft 1.5s forwards;
     }
     #circuitTwo {
         position: absolute;
         right: 0;
-        top: 70%;
+        top: 75%;
         animation: enterRight 1.5s forwards;
     }
     #circuitOne, #circuitTwo {
         width: 50%;
         height: auto;
-        z-index: -1;
+        z-index: -2;
     }
     #hero h1 {
         font-size: calc(2rem + 1vw);
@@ -40,7 +40,7 @@
         align-self: center;
     }
     #hero h2 {
-        font-size: calc(1.8rem);
+        font-size: calc(1.3rem);
         max-width: 400px;
         align-self: center;
     }
