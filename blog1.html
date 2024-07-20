@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>What are HTML, CSS, and Javascript? | Flamewing Media</title>
+        <!-- Preloads-->
+        <link rel="canonical" href="https://www.flamewingmedia.com/blog1">
+        <link rel="stylesheet" href="critical.css">
+        <link rel="stylesheet" href="article.css">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/image/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#0f0f0f">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div id="topBar">
+            <a id="logo" href="/index.html"><img src="/images/logos/footerLogo.svg" alt="Flamewing Media logo, a bird with wings of fire" decoding="async" width="90" height="80"/></a>
+            <div id="navBar">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/learn.html" class="active">Learn</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div id="myNav" class="overlay">
+                <p class="closebtn" onclick="closeNav()">&times;</p>
+                <div class="overlay-content">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/services.html">Services</a>
+                    <a href="/learn.html">Learn</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+            <img id="menuIcon" src="/images/icons/menu.svg" alt="Click to open the menu" decoding="async" width="60" height="60" onclick="openNav()"/>
+        </div>
+        <main>
+        <!-- Article -->
+        <section id="article">
+            <h1>Learn <span class="c">More</span></h1>
+            <div id="articleHead">
+                <h2>What are HTML, CSS, and Javascript?</h2>
+                <img src="/images/blog/coding.webp" alt="A picture of Javascript code on a screen" decoding="async" width="300" height="auto"/>
+            </div>
+            <div id="articleContent">
+                <p>The main technologies used by any web developer are HTML, CSS, and Javascript. These three coding languages make up what is known as the “core stack” and are the core components of a website. No matter which browser you’re using or what device you’re browsing from, they work together to constitute every single web page you have ever visited. So what are each of these coding languages, and what do they do exactly? This article is dedicated to answering exactly that question.</p>
+                <h3>HTML</h3>
+                <p>HTML stands for Hypertext Markup Language. It was created in 1993 and has been the standard language for displaying content on a web page ever since. Your browser (Chrome, Safari, Firefox, Microsoft Edge, etc) is a program designed to parse an HTML document and display it onto your screen. As web developers, we use HTML to define the structure of a web page.</p>
+                <p>Elements are the building blocks of any HTML document. All text, images, links, forms, buttons, dropdown menus, and page information are described by and included within them. Elements are also incredibly useful tools for accessibility. For disabled users who require screen-readers, HTML elements provide important context to a browser as to what each piece of content is supposed to be (Is a piece of text a header, or a paragraph, or a list, or a link, or something else?), and how it is to be interpreted by the user.</p>
+                <p>On a laptop or desktop computer, one can easily see the HTML of any website. If you highlight some text and right click, there should be an option to “inspect” what you’ve selected. Opening the inspect menu displays the HTML code for the website you are visiting. It’s important to note, for this reason, that private or secure information should never be stored on an HTML document.</p>
+                <h3>CSS</h3>
+                <p>HTML alone does not provide many options for making a website look pretty, as its primary purpose is to define the structure  and content of a page. That’s where CSS comes in. It stands for Cascading Style Sheets, and it is a powerful technology that allows a developer to make a website appear anyway they want it to. Your browser is designed to parse a CSS document in the same way it would parse an HTML document, to then apply the styling outlined by it to the page.</p>
+                <p>Selectors are the building blocks of CSS. With selectors, we can target specific elements from our HTML document to change the way they appear. We can <span class="c">add color</span>, make text <b>bold</b> or <i>italic</i>, <span style="font-family:Verdana, Geneva, Tahoma, sans-serif">change fonts,</span> <span style="font-size:larger">resize elements</span>, arrange, rearrange, and position anything wherever we want, and much, much more.</p>
+                <p>In addition, CSS is what makes responsive design possible. We use a tool called media queries to change how the content appears when certain conditions are met. For example, we can tell a browser to rearrange content as the screen size gets smaller and smaller to ensure that everything fills out only the available space. <a class="c" href="/blog2.html">To learn more about responsive design and mobile-friendliness, click here!</a></p>
+                <h3>Javascript</h3>
+                <p>While HTML defines the content of the page, and CSS makes it look beautiful, Javascript’s job is to make a website interactive. Javascript is the only true “programming language” of the three, and provides endless possibilites you wouldn’t get with just HTML and CSS alone. Javascript, in essence, gives developers a way to edit the HTML and CSS documents based on user input.</p>
+                <p>There is no one building block of Javascript. Instead, it is a set of incredibly powerful tools that work in tandem to create a user-friendly experience. Javascript can store data in your browser and recall it for later, it can add, remove, or change HTML elements, or completely rework the styles applied by CSS.</p>
+                <p>A perfect example of something we can use Javascript for is to add dark mode functionality. It runs in the background, waiting for a user to toggle the switch that enables and disables dark mode. When the toggle is pressed, Javascript works its way through the CSS document and changes the colors and other styles applied to the HTML elements. When the toggle is pressed again, it goes back and reverts the changes to their default.</p>
+                <h3>Recap</h3>
+                <p>In short, HTML, CSS, and Javascript are the primary tools in a web developer's arsenal, and they each serve a necessary function:</p>
+                <ul>
+                    <li><b>HTML</b> outlines the structure and content</li>
+                    <li><b>CSS</b> styles the content to make it look nice</li>
+                    <li><b>Javascript</b> makes the content interactive</li>
+                </ul>
+            </div>
+        </section>
+        <section id="readMore">
+            <h3>Read <span class="c">More</span></h3>
+            <hr>
+            <div id="readMoreGrid">
+                <a href="/blog2.html" aria-label="Click to read the Responsive Design article">
+                    <div class="article-card" id="ac2">
+                        <img src="/images/blog/devices.webp" alt="A picture of Javascript code on a computer screen" decoding="asyc" loading="lazy" width="300" height="auto"/>
+                        <h3>What is Responsive Design?</h3>
+                    </div>
+                </a>
+                <a href="/blog3.html" aria-label="Click to read the page builder article">
+                    <div class="article-card" id="ac2">
+                        <img src="/images/blog/page-builder.webp" alt="A picture of a laptop with holographic technology" decoding="asyc" loading="lazy" width="300" height="auto"/>
+                        <h3>How Do Page Builders Slow Down My Site?</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        </main>
+        <!-- Footer -->
+        <div class="wave-div">
+            <svg preserveAspectRatio="none" width="200%" height="100px" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 93.89285714285714,175.64285714285714 187.78571428571428,201.28571428571428 305,199 C 422.2142857142857,196.71428571428572 562.75,166.5 680,136 C 797.25,105.5 891.2142857142858,74.71428571428571 1014,77 C 1136.7857142857142,79.28571428571429 1288.392857142857,114.64285714285714 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#13212C" fill-opacity="1" class="wave"></path></svg>
+        </div>
+        <section id="footer">
+            <img id="footerLogo" src="/images/logos/footerLogo.svg" alt="Company Logo" decoding="async" loading="lazy" height="100" width="auto"/>
+            <div id="footerGrid">
+                <div class="footer-list">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="mailto:contact@flamewing.com">contact@flamewingmedia.com</a></li>
+                    </ul>
+                    <div id="socials">
+                        <a href="https://www.facebook.com/profile.php?id=61562465186088&sk" alt="Click to visit our Facebook page" target="_blank"><img src="/images/socials/facebook.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.twitter.com/flamewingmedia" alt="Click to visit our X page" target="_blank"><img src="/images/socials/twitter.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.youtube.com/@FlamewingMedia" alt="Click to visit our YouTube page" target="_blank"><img src="/images/socials/youtube.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.instagram.com/flamewingmedia/" alt="Click to visit our Instagram page" target="_blank"><img src="/images/socials/instagram.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.tiktok.com/@flamewing.media" alt="Click to visit our TikTok page" target="_blank"><img src="/images/socials/tiktok.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.linkedin.com/company/103695581/" alt="Click to visit our LinkedIn page" target="_blank"><img src="/images/socials/linkedin.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/learn.html">Learn</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="/services.html">Web Design & Development</a></li>
+                        <li><a href="/services.html#copywriting">Content & Copywriting</a></li>
+                        <li><a href="/services.html#hosting">Hosting & Maintenance</a></li>
+                        <li><a href="/services.html#pricing">Our Plans</a></li>
+                        <li><a href="/services.html#process">Our Process</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyrightBox">
+                <p>Flamewing Media | Copyright 2024 | All Rights Reserved</p>
+            </div>
+        </section>
+        <!-- Javascript -->
+        <script src="critical.js"></script>
+    </body>
+</html>
