@@ -1,0 +1,223 @@
+/* -- META -- */
+    /* - Variables - */
+    * {
+        padding: 0;
+    }
+    :root {
+        --black: #090909;
+        --gold1: #F9C655;
+        --gold2: #F99E3C;
+        --gold3: #F8872E;
+        --blue: #13212C;
+    }
+
+    /* - Fonts - */
+    @font-face {
+        font-family: ThiccBoi;
+        src: url(/fonts/thiccboi/THICCCBOI-Regular.ttf);
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: ThiccBoi;
+        src: url(/fonts/thiccboi/THICCCBOI-ExtraBold.ttf);
+        font-weight: bold;
+    }
+
+    /* - Animations - */
+    @keyframes fadeUp {
+        0% {opacity: 0%; transform: translate(0, 20px);}
+        100% {opacity: 100%; transform: translate(0, 0);}
+    }
+    @keyframes wave {
+        0% {transform: translate(0,0)}
+        50% {transform: translate(-100%, 0)}
+        100% {transform: translate(0,0)}
+    }
+    @keyframes gentleHover {
+        0% {transform: translate(0, 0)}
+        50% {transform: translate(0, -10px)}
+        100% {transform: translate(0, 0)}
+    }
+    @keyframes enterLeft {
+        0% {opacity: 0; transform: translate(-50px, 0px)};
+        100% {opacity: 1; transform: translate(0px, 0px)};
+    }
+    @keyframes enterRight {
+        0% {opacity: 0; transform: translate(50px, 0px)};
+        100% {opacity: 1; transform: translate(0px, 0px)};
+    }
+    @keyframes glowFlicker {
+        0%, 19.9%, 22%, 62.9%, 64%, 64.9%, 70%, 100% {box-shadow: 0px 0px 20px 0px var(--blue1);}
+        20%, 21.9%, 63%, 63.9%, 65%, 69.9% {box-shadow: 0px 0px 5px 0px var(--blue1);}
+    }
+
+    /* - Curtain Overlay - */
+    .overlay {  
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .overlay a, .overlay p {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .overlay a:hover, .overlay a:focus, .overlay p:hover, .overlay p:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+    }
+
+    /* - Body & Base Padding - */
+    body {
+        margin: 0;
+        background-color: var(--black);
+        overflow-x: hidden;
+        font-family: ThiccBoi, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 1.7;
+    }
+    section {
+        padding: 50px 5%;
+    }
+    @media only screen and (min-width: 768px) {
+        section {
+            padding: 75px 5%;
+        }
+    }
+   
+/* -- TOP BAR -- */
+@media only screen and (min-width: 0px) {
+    #topBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5% 0 5%;
+    }
+    #navBar {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #menuIcon {
+        display: none;
+    }
+    #navBar {
+        display: inline-block;
+    }
+    #navBar a {
+        color: white;
+        text-decoration: none;
+        margin: 0px 10px;
+        font-size: larger;
+        font-weight: bold;
+        transition: color 0.25s;
+    }
+    #navBar .active {
+        color: var(--gold2);
+    }
+    #navBar a:hover {
+        color: var(--gold1);
+    }
+}
+
+/* -- FOOTER -- */
+@media only screen and (min-width: 0px) {
+    .wave-div {
+        animation: wave 10s ease-in-out infinite;
+    }
+    #footer {
+        background-color: var(--blue);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    #footer h2 {
+        text-align: center;
+    }
+    #footerLogo {
+        display: flex;
+        flex-direction: column;
+    }
+    #socials img {
+        width: 12.5%;
+        max-width: 75px;
+        margin: 0 0.1443rem;
+    }
+    #footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        margin: 2rem 0;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list h3 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .footer-list ul {
+        padding: 0;
+        list-style-type: none;
+        line-height: 2.5;
+    }
+    .footer-list a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.25s;
+        font-weight: bold;
+    }
+    .footer-list a:hover {
+        color: var(--gold1);
+    }
+    #copyrightBox {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+        a {
+          color: white;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    #footerGrid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 5%;
+    }
+    .footer-list {
+        text-align: center;
+    }
+}

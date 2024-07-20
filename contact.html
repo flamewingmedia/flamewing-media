@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Contact Us | Flamewing Media</title>
+        <!-- Preloads-->
+        <link rel="canonical" href="https://www.flamewingmedia.com/contact">
+        <link rel="stylesheet" href="critical.css">
+        <link rel="stylesheet" href="contact.css">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/image/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#0f0f0f">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div id="topBar">
+            <a id="logo" href="/index.html"><img src="/images/logos/footerLogo.svg" alt="Flamewing Media logo, a bird with wings of fire" decoding="async" width="90" height="80"/></a>
+            <div id="navBar">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/learn.html">Learn</a>
+                <a href="/contact.html" class="active">Contact</a>
+            </div>
+            <div id="myNav" class="overlay">
+                <p class="closebtn" onclick="closeNav()">&times;</p>
+                <div class="overlay-content">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/services.html">Services</a>
+                    <a href="/learn.html">Learn</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+            <img id="menuIcon" src="/images/icons/menu.svg" alt="Click to open the menu" decoding="async" width="60" height="60" onclick="openNav()"/>
+        </div>
+        <main>
+            <!-- Info Box -->
+            <section id="info">
+                <h1><span class="c">Contact</span> Us</h1>
+                <h2><span class="c">Drop Us</span> a Line</h2>
+                <p>Please feel free to reach out to us with whatever questions or concerns you may have. We are here to help you <b class="c">spread your digital wings!</b></p>
+            </section>
+            <!-- Contact Form-->
+            <section id="formContainer">
+                <div id="formBox">
+                    <h2>Send us an Email</h2>
+                    <form id="contact" name="Contact Form" method="POST" data-netlify="true">
+                        <input type="hidden" name="subject" value="Someone sent an inquiry!"/>
+                        <div class="input-group">
+                            <label for="name">Your Name:</label>
+                            <input aria-label="name" name="name" placeholder="Full Name" type="text" tabindex="1" required/>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Your Email:</label>
+                            <input aria-label="email" name="email" placeholder="Your Email" type="email" tabindex="2" required/>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message:</label>
+                            <textarea aria-label="message" name="message" placeholder="Write your message here" type="textarea" rows="10" cols="30" tabindex="4" required></textarea>
+                        </div>
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" tabindex="5">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <div class="wave-div">
+            <svg preserveAspectRatio="none" width="200%" height="100px" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 93.89285714285714,175.64285714285714 187.78571428571428,201.28571428571428 305,199 C 422.2142857142857,196.71428571428572 562.75,166.5 680,136 C 797.25,105.5 891.2142857142858,74.71428571428571 1014,77 C 1136.7857142857142,79.28571428571429 1288.392857142857,114.64285714285714 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#13212C" fill-opacity="1" class="wave"></path></svg>
+        </div>
+        <section id="footer">
+            <img id="footerLogo" src="/images/logos/footerLogo.svg" alt="Company Logo" decoding="async" loading="lazy" height="100" width="auto"/>
+            <div id="footerGrid">
+                <div class="footer-list">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="mailto:contact@flamewing.com">contact@flamewingmedia.com</a></li>
+                    </ul>
+                    <div id="socials">
+                        <a href="https://www.facebook.com/profile.php?id=61562465186088&sk" alt="Click to visit our Facebook page" target="_blank"><img src="/images/socials/facebook.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.twitter.com/flamewingmedia" alt="Click to visit our X page" target="_blank"><img src="/images/socials/twitter.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.youtube.com/@FlamewingMedia" alt="Click to visit our YouTube page" target="_blank"><img src="/images/socials/youtube.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.instagram.com/flamewingmedia/" alt="Click to visit our Instagram page" target="_blank"><img src="/images/socials/instagram.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.tiktok.com/@flamewing.media" alt="Click to visit our TikTok page" target="_blank"><img src="/images/socials/tiktok.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                        <a href="https://www.linkedin.com/company/103695581/" alt="Click to visit our LinkedIn page" target="_blank"><img src="/images/socials/linkedin.svg" alt="facebook icon" decoding="async" loading="lazy" width="50" height="50"></a>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/learn.html">Learn</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="/services.html">Web Design & Development</a></li>
+                        <li><a href="/services.html#copywriting">Content & Copywriting</a></li>
+                        <li><a href="/services.html#hosting">Hosting & Maintenance</a></li>
+                        <li><a href="/services.html#pricing">Our Plans</a></li>
+                        <li><a href="/services.html#process">Our Process</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyrightBox">
+                <p>Flamewing Media | Copyright 2024 | All Rights Reserved</p>
+            </div>
+        </section>
+        <!-- Javascript -->
+        <script src="critical.js"></script>
+    </body>
+</html>
