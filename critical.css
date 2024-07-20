@@ -187,6 +187,7 @@
 @media only screen and (min-width: 0px) {
     .wave-div {
         animation: wave 10s ease-in-out infinite;
+        margin-bottom: -2rem;
     }
     #footer {
         background-color: var(--blue);
