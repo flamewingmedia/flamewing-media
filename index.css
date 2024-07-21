@@ -245,10 +245,11 @@
         width: 100%;
         text-align: left;
         border: 1px solid var(--darkblue);
-        transition: 0.4s;
+        transition: background 0.4s;
         box-shadow: none;
     }
     .accordion:hover {
+        background: var(--darkblue);
         box-shadow: none;
     }
     .panel {
