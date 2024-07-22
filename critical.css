@@ -168,12 +168,28 @@
         display: inline-block;
     }
     #navBar a {
+        padding: 5px 0;
         color: white;
         text-decoration: none;
         margin: 0px 1rem;
         font-size: larger;
         font-weight: bold;
         transition: color 0.25s;
+        width: max-content;
+        position: relative;
+    }
+    #navBar a::after {
+        content: '';
+        height: 4px;
+        width: 0%;
+        background: var(--gold2);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 200ms;
+    }
+    #navBar a:hover::after {
+        width: 100%;
     }
     #navBar .active {
         color: var(--gold2);
